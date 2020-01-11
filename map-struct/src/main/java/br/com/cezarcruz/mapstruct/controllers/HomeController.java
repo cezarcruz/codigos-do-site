@@ -21,21 +21,23 @@ public class HomeController {
   {
     "nome": "Teste",
     "idade": 48,
-    "endereco": {
+    "enderecos": [{
       "rua": "Rua 3",
       "numero": 27,
       "cidade": "Londrina"
-    }
+    }]
   }
 
   {
-    "nome": "Teste",
-    "idade": 48,
-    "endereco": {
-        "logradouro": "Rua 3",
-        "numero": "27",
-        "cidade": "Londrina"
-    }
+      "nome": "Teste",
+      "idade": 48,
+      "enderecos": [
+          {
+              "logradouro": "Rua 3",
+              "numero": "27",
+              "cidade": "Londrina"
+          }
+      ]
   }
 
    */

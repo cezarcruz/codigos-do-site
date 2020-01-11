@@ -1,9 +1,11 @@
 package br.com.cezarcruz.mapstruct.controllers.request;
 
+import java.util.List;
+
 public class PessoaRequest {
   private String nome;
   private Integer idade;
-  private EnderecoRequest endereco;
+  private List<EnderecoRequest> enderecos;
 
   public String getNome() {
     return nome;
@@ -21,11 +23,11 @@ public class PessoaRequest {
     this.idade = idade;
   }
 
-  public EnderecoRequest getEndereco() {
-    return endereco;
+  public List<EnderecoRequest> getEnderecos() {
+    return enderecos;
   }
 
-  public void setEndereco(final EnderecoRequest endereco) {
-    this.endereco = endereco;
+  public void setEnderecos(final List<EnderecoRequest> enderecos) {
+    this.enderecos = enderecos;
   }
 }

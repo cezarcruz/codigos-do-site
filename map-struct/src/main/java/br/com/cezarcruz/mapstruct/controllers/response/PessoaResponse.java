@@ -1,11 +1,11 @@
 package br.com.cezarcruz.mapstruct.controllers.response;
 
-import br.com.cezarcruz.mapstruct.controllers.request.EnderecoRequest;
+import java.util.List;
 
 public class PessoaResponse {
   private String nome;
   private Integer idade;
-  private EnderecoResponse endereco;
+  private List<EnderecoResponse> enderecos;
 
   public String getNome() {
     return nome;
@@ -23,11 +23,11 @@ public class PessoaResponse {
     this.idade = idade;
   }
 
-  public EnderecoResponse getEndereco() {
-    return endereco;
+  public List<EnderecoResponse> getEnderecos() {
+    return enderecos;
   }
 
-  public void setEndereco(final EnderecoResponse endereco) {
-    this.endereco = endereco;
+  public void setEnderecos(final List<EnderecoResponse> enderecos) {
+    this.enderecos = enderecos;
   }
 }
